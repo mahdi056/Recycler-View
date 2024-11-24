@@ -1,0 +1,44 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="16dp"
+    android:background="#FFFFFF"
+    android:layout_margin="8dp"
+    android:elevation="4dp">
+
+    <!-- Laptop Image -->
+    <ImageView
+        android:id="@+id/laptopImage"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@android:drawable/ic_menu_camera"
+        android:contentDescription="Laptop Image"
+        android:layout_marginEnd="16dp" />
+
+    <!-- Laptop Name and Price -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/laptopName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Laptop Name"
+            android:textSize="18sp"
+            android:textColor="#000"
+            android:paddingBottom="4dp" />
+
+        <TextView
+            android:id="@+id/laptopPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Price: $1000"
+            android:textSize="16sp"
+            android:textColor="#777" />
+    </LinearLayout>
+</LinearLayout>
+
